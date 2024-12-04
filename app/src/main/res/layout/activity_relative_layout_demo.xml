@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="BTEC FPT HA NOI"
+        android:textStyle="bold"
+        android:id="@+id/tvTitleSchool"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copyright 2024 SE06205"
+        android:textSize="18sp"
+        android:id="@+id/tvCopyright"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:src="@drawable/btec"
+        android:layout_centerInParent="true"
+        android:id="@+id/mgLogo"
+        android:layout_below="@+id/tvTitleSchool"/>
+
+    <EditText
+        android:layout_below="@+id/mgLogo"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#9EDBE3"
+        android:hint="Enter username"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:id="@+id/edtUsername"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#9EDBE3"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/edtUsername"
+        android:id="@+id/edtPassword"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Login"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/edtPassword"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="50dp"
+        android:text="Cancel"
+        android:textStyle="bold"
+        android:id="@+id/btnCancel"
+        android:layout_below="@+id/edtPassword"
+        android:layout_toEndOf="@+id/btnLogin"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="140dp"/>
+
+    <!-- Text for "Do you have an account?" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you have an account?"
+        android:textSize="16sp"
+        android:id="@+id/tvDoYouHaveAccount"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Button for "Signup" -->
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Signup"
+        android:id="@+id/btnSignup"
+        android:layout_below="@+id/tvDoYouHaveAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>

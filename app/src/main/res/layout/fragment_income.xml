@@ -1,0 +1,157 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <!-- Expense Form -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="549dp"
+        android:background="#FAF3EB"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <!-- Date Section -->
+
+        <!-- Notes Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:background="#FDD5C8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày: "
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:background="#FFEDE7"
+                android:padding="8dp"
+                android:textColor="#000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="Ghi chú"
+            android:padding="8dp"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <!-- Amount Section -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="Số tiền đã nhận"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Danh mục:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <!-- Individual Category Items -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:src="@drawable/luong"
+
+                />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:src="@drawable/family"
+
+                />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:src="@drawable/tienthuong"
+
+                />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:src="@drawable/invest"
+
+                />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/other"
+
+                />
+
+
+
+        </TableRow>
+
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#2196F3"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <!-- Add Button -->
+    </LinearLayout>
+
+</LinearLayout>
+

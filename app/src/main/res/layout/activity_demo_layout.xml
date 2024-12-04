@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <CheckBox
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="Agree with you"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:checked="false"
+        android:id="@+id/cbAgree"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter data"
+        android:background="#A0DEE6"
+        android:paddingStart="10dp"
+        android:id="@+id/adtData"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCountText"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="29sp"
+        android:id="@+id/tvTitle"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toi nay an gi"
+        android:textSize="20sp"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pho"
+        android:id="@+id/radPho"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Com"
+        android:id="@+id/radCom"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bun"
+        android:id="@+id/radBun"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ban que o dau"
+        android:textSize="24sp"
+        android:textStyle="italic"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radgAddress">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ha Noi"
+            android:textSize="20sp"
+            android:id="@+id/radHanoi"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nghe An"
+            android:textSize="20sp"
+            android:id="@+id/radNghean"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ha Tinh"
+            android:textSize="20sp"
+            android:id="@+id/radHatinh"/>
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me"
+        android:id="@+id/btnClickMe"/>
+        
+
+</LinearLayout>

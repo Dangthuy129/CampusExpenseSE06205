@@ -1,0 +1,66 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAF3EB">
+
+    <!-- Tab Texts -->
+
+    <TextView
+        android:id="@+id/tvExpenseManager"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:background="#FDD5C8"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Quản lý chi tiêu"
+        android:textColor="#4EB7F5"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="2dp">
+
+
+        <TextView
+            android:id="@+id/tab_expenses"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selected_background"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Chi tiêu"
+            android:textColor="#4EB7F5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/tab_income"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_unselected_background"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Thu nhập"
+            android:textColor="#4EB7F5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <!-- ViewPager2 -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

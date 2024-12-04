@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="my profile"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/Proflie"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/btec"
+        android:id="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/Proflie"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:text="lan huong"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/Proflie"
+        tools:layout_editor_absoluteY="58dp"
+        android:id="@+id/tvten"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:text="20 tuoi"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/tvten"
+        tools:layout_editor_absoluteY="58dp"
+        android:id="@+id/tvtuoi"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:text="vinh phuc"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/tvtuoi"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <TextView
+        android:id="@+id/Tieusu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Tieu su"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        tools:layout_editor_absoluteX="6dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
